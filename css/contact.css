@@ -4,6 +4,8 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-color: #fff0f3;
+    color: #a4133c;
 }
 
 /* Navigation Bar */
@@ -12,12 +14,14 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ff758f;
+    background-color: #fff0f3;
 }
 
 .nav-container h1 {
     margin: 0;
     font-size: 1.5rem;
+    color: #a4133c;
 }
 
 nav ul {
@@ -33,6 +37,11 @@ nav a {
     text-decoration: none;
     display: block;
     padding: 1.5rem 0;
+    color: #a4133c;
+}
+
+nav a:hover {
+    color: #ff4d6d;
 }
 
 /* Dropdown Menu */
@@ -45,11 +54,13 @@ nav a {
     position: absolute;
     top: 100%;
     left: 0;
-    border: 1px solid #ccc;
+    border: 1px solid #ff758f;
+    background-color: #fff0f3;
     list-style: none;
     padding: 0;
     margin: 0;
     min-width: 200px;
+    z-index: 1;
 }
 
 .dropdown:hover .dropdown-content {
@@ -58,6 +69,12 @@ nav a {
 
 .dropdown-content li a {
     padding: 0.75rem 1rem;
+    color: #a4133c;
+}
+
+.dropdown-content li a:hover {
+    background-color: #ff758f;
+    color: #fff0f3;
 }
 
 /* Main Content */
@@ -70,11 +87,13 @@ main {
 main h2 {
     text-align: center;
     margin-bottom: 1rem;
+    color: #a4133c;
 }
 
 main p {
     text-align: center;
     margin-bottom: 2rem;
+    color: #333;
 }
 
 form div {
@@ -90,24 +109,32 @@ form input,
 form textarea {
     width: 100%;
     padding: 0.8rem;
-    border: 1px solid #ccc;
-    box-sizing: border-box; 
+    border: 1px solid #ff758f;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #333;
 }
 
 button {
     width: 100%;
     padding: 0.8rem 1.5rem;
-    border: 1px solid #000;
-    background: #fff;
+    border: 1px solid #a4133c;
+    background: #ff4d6d;
+    color: #fff;
     cursor: pointer;
     font-size: 1rem;
+}
+
+button:hover {
+    background: #c9184a;
 }
 
 /* Footer */
 footer {
     padding: 2rem 1rem;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #ff758f;
     text-align: center; 
+    background-color: #fff0f3;
 }
 
 footer .footer-content { 
@@ -124,6 +151,7 @@ footer div {
 
 footer h4 {
     margin-top: 0;
+    color: #a4133c;
 }
 
 footer ul {
@@ -133,9 +161,15 @@ footer ul {
 
 footer a {
     text-decoration: none;
+    color: #a4133c;
+}
+
+footer a:hover {
+    color: #ff4d6d;
 }
 
 .copyright {
     margin-top: 1rem;
     font-size: 0.8rem;
+    color: #c9184a;
 }
